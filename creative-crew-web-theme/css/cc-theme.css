@@ -1,0 +1,121 @@
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    font-family:"robotoregular";
+    margin:0px;
+}
+.cc-side-menu-black{
+    height:100%;
+    position:fixed;
+    top:0px;
+    background-color:#000;
+    color:#fff;
+}
+.cc-side-bar{
+    width:275px;
+    margin-left:-275px;
+}
+.cc-side-bar-margin{
+    width:10px;
+}
+.ui.black.button{
+    background-color:#000 !important;
+}
+.ui.black.button:hover{
+    background-color:#4c4c4c !important;
+}
+#launch-button{
+    margin-top:70px;
+    position:fixed;
+    -webkit-border-top-right-radius: 5px; 
+    -webkit-border-bottom-right-radius: 5px; 
+    -moz-border-radius-topright: 5px; 
+    -moz-border-radius-bottomright : 5px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    padding:8px 20px;
+    height:38px;
+    width:50px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    transition: width 0.1s ease-out;
+    cursor:pointer;
+    z-index:9999;
+}
+#launch-button:hover{
+    width:100px;
+}
+#launch-button:hover span{
+    display:block;
+    margin-top:0px;
+    opacity: 1; 
+    height: auto;
+    color:#fff;
+}
+#launch-button i{
+    float:left;
+    margin-right:10px;
+}
+#launch-button span{
+    display:block;
+    opacity: 0; 
+    height: 0;
+    margin-top:100px;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    overflow: hidden;
+}
+.cc-side-bar{
+    padding-top:50px;
+}
+.cc-side-menu-black ul{
+    padding:0px;
+    margin:20px;
+}
+.cc-side-menu-black ul li:first-child{
+    font-size:1.4em;
+    color:#fff;
+    font-family:'robotolight';
+    padding:4px 0px 4px 0px;
+    border-bottom-width:0px;
+    margin-left:0px;
+    cursor:default;
+}
+.cc-side-menu-black ul li:first-child i{
+    float:left;
+    margin-right:10px;
+}
+.cc-side-menu-black ul li{
+    padding:4px 0px 4px 5px;
+    margin-left:28px;
+    font-size:0.9em;
+    list-style:none;
+    color:#bbbbbb;
+    border-bottom:1px solid #222222;
+    cursor:pointer;
+}
+.cc-side-menu-black ul li:hover{
+    color:#ffffff;
+}
