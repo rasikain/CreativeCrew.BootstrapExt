@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="content/site-base/css/bootstrap.min.css" rel="stylesheet">
     <link href="creative-crew-web-theme/css/cc-theme.css" rel="stylesheet">
+    <link href="content/default-theme/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,71 +17,56 @@
 </head>
 
 <body>
-    
     <div class="cc-side-bar cc-side-menu-black">
         <ul>
-            <li><i class="glyphicon glyphicon-file"></i>Pages</li>
+            <li>
+                <i class="glyphicon glyphicon-file"></i>Pages</li>
             <li id="loadDashboard">Dashboard</li>
+            <li id="loadScorecard">Scorecard</li>
         </ul>
         <ul>
-            <li><i class="glyphicon glyphicon-bookmark"></i>UI Elements</li>
-            <li id="">Typography</li>
+            <li>
+                <i class="glyphicon glyphicon-bookmark"></i>UI Elements</li>
+            <li id="loadTypography">Typography</li>
             <li id="">Message & Notifications</li>
             <li id="">Icons</li>
             <li id="">Buttons</li>
             <li id="">Containers</li>
-        </ul> 
+        </ul>
         <ul>
-            <li><i class="glyphicon glyphicon-list-alt"></i>Forms</li>
+            <li>
+                <i class="glyphicon glyphicon-list-alt"></i>Forms</li>
             <li id="">Form Elements</li>
             <li id="">Form Types</li>
             <li id="">Form Validations</li>
         </ul>
         <ul>
-            <li><i class="glyphicon glyphicon-tasks"></i>Components</li>
+            <li>
+                <i class="glyphicon glyphicon-tasks"></i>Components</li>
             <li id="">Top Nav</li>
             <li id="">Progress bar</li>
-        </ul>    
+        </ul>
     </div>
     <div class="cc-side-bar-margin cc-side-menu-black">
     </div>
-    <div id="launch-button">
+    <div id="launchButton">
         <i class="glyphicon glyphicon-th-list"></i>
         <span>Menu</span>
     </div>
-
-    <div id="container"></div>
-    
+    <section id="pageLoader">
+        <div id="headerContainer">
+        </div>
+        <div id="midContainer">
+        </div>
+        <div id="footerContainer">
+        </div>
+    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="content/site-base/js/bootstrap.min.js"></script>
-    <script language="javascript">
-    
-        $( "#launch-button" ).bind({
-              click: function() {
-                var slider_width = $('.cc-side-bar').width();//get width automaticly
-                if($(this).css("margin-left") == slider_width+"px" && !$(this).is(':animated'))
-                {
-                    $('.cc-side-bar,#launch-button, #container').animate({"margin-left": '-='+slider_width});
-                }
-                else
-                {
-                    if(!$(this).is(':animated'))//perevent double click to double margin
-                    {
-                        $('.cc-side-bar,#launch-button, #container').animate({"margin-left": '+='+slider_width});
-                    }
-                }
-            }
-        });
-        
-        $( "#loadDashboard" ).bind({
-              click: function() {
-                $( "#container" ).load('index.html')
-            }
-        });
-        $( "#container" ).load('index.html')
-    </script>
+    <script src="creative-crew-web-theme/javascript/main.js"></script>
+
 </body>
 
 </html>

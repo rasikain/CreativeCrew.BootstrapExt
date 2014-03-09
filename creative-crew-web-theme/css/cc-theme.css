@@ -25,6 +25,11 @@ html,body{
     font-family:"robotoregular";
     margin:0px;
 }
+h1 {
+    margin-bottom: 1em;
+    font-family: 'robotolight';
+    letter-spacing: -2px;
+}
 .cc-side-menu-black{
     height:100%;
     position:fixed;
@@ -39,13 +44,7 @@ html,body{
 .cc-side-bar-margin{
     width:10px;
 }
-.ui.black.button{
-    background-color:#000 !important;
-}
-.ui.black.button:hover{
-    background-color:#4c4c4c !important;
-}
-#launch-button{
+#launchButton{
     margin-top:70px;
     position:fixed;
     -webkit-border-top-right-radius: 5px; 
@@ -64,21 +63,21 @@ html,body{
     cursor:pointer;
     z-index:9999;
 }
-#launch-button:hover{
+#launchButton:hover{
     width:100px;
 }
-#launch-button:hover span{
+#launchButton:hover span{
     display:block;
     margin-top:0px;
     opacity: 1; 
     height: auto;
     color:#fff;
 }
-#launch-button i{
+#launchButton i{
     float:left;
     margin-right:10px;
 }
-#launch-button span{
+#launchButton span{
     display:block;
     opacity: 0; 
     height: 0;
@@ -118,4 +117,26 @@ html,body{
 }
 .cc-side-menu-black ul li:hover{
     color:#ffffff;
+}
+.cc-app-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cc-web-element-container{
+    padding:20px;
+    background-color:#ffffff;
+    position: relative;
+    margin-bottom: 20px;
+}
+.cc-web-element-container h3{
+    margin-top: 0px;
+}
+.cc-panel-controlls{
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+.cc-content{
+
 }

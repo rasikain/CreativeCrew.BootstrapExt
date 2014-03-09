@@ -23,9 +23,22 @@ html,
 body {
     font-family: 'robotoregular';
     background-color: #e5e9ec;
+    margin-bottom: 30px;
+}
+h1,
+h2 {
+    margin-bottom: 1em;
+    font-family: 'robotolight';
+    letter-spacing: -2px;
 }
 h3 {
     font-size: 1.5em;
+}
+.h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.1em;
 }
 .app-header-wrapper {
     background-color: #000;
@@ -63,16 +76,14 @@ h3 {
     background-repeat: no-repeat;
     background-position: 0px 12px;
 }
-.page-heading {
-    margin-bottom: 1em;
-    font-family: 'robotolight';
-    letter-spacing: -2px;
-}
 .content-box-type-one {
     padding: 20px;
 }
-.content-box-type-two{
-    padding:10px 20px;
+.content-box-type-two {
+    padding: 10px 20px;
+}
+.content-box-type-three {
+    padding: 12px 30px;
 }
 .top-boxes h3 {
     font-family: 'robotolight';
@@ -87,14 +98,14 @@ h3 {
 .mid-boxes h3 {
     margin: 0em 0em 1em 0em;
     font-size: 1.2em;
-    float:left;
-    margin-right:10px;
+    float: left;
+    margin-right: 10px;
 }
 .iconed-nav {
     margin-top: 8px;
 }
-.iconed-nav i{
-    color:#fff;
+.iconed-nav i {
+    color: #fff;
 }
 .iconed-nav a {
     color: #fff;
@@ -109,8 +120,8 @@ h3 {
 .green-back {
     background-color: #0aa699;
 }
-.dark-green-back{
-    background-color:#07776d;
+.dark-green-back {
+    background-color: #07776d;
 }
 .red-back {
     background-color: #f35958;
@@ -118,58 +129,83 @@ h3 {
 .magenta-back {
     background-color: #736086;
 }
-.yellow-back{
+.yellow-back {
     background-color: #fdd01c;
 }
-.white-back{
-    background-color:#fff;
+.white-back {
+    background-color: #fff;
 }
-.dark-green-text{
-    color:#07776d;
+.dark-green-text {
+    color: #07776d;
 }
-.yellow-text{
+.title-type-one {
+    background-color: #444;
+    color: #fff;
+}
+.title-type-one h4,
+.title-type-one h3 {
+    margin: 0px;
+}
+.yellow-text {
     color: #fdd01c;
 }
-.red-text{
+.red-text {
     color: #f35958;
 }
-.bold-text{
-    font-family:'robotobold';
+.bold-text {
+    font-family: 'robotobold';
 }
-.grid-title-white div{
-    color:#fff;
-    font-family:'robotobold';
-    font-size:1.1em;
+.grid-title-white div {
+    color: #fff;
+    font-family: 'robotobold';
+    font-size: 1.1em;
 }
-.grid{
-    border-bottom:1px solid #d3d3d3;
+.grid {
+    border-bottom: 1px solid #d3d3d3;
 }
-.inverted-margin-container{
-    padding-left:15px;
-    padding-right:15px;
+.scorecard-tile {
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
 }
-.font-adjuster{
-    font-size:1.12em !important;
+.inverted-margin-container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.height-adjuster{
-    height:81px;
+.font-adjuster {
+    font-size: 1.12em !important;
 }
-.status-text{
-    margin:6px 0px;
+.height-adjuster {
+    height: 81px;
 }
-.progress-bar-back, .progress-bar-back div{
-    height:5px;
+.status-text {
+    margin: 6px 0px;
 }
-.progress-bar-back{
-    background-color:#ebeef1;
+.progress-bar-back,
+.progress-bar-back div {
+    height: 5px;
 }
-.large-text{
-    font-size:1.2em;
+.progress-bar-back {
+    background-color: #ebeef1;
 }
-.progress-bar{
-    box-shadow:none;
+.large-text {
+    font-size: 1.2em;
 }
-
+.progress-bar {
+    box-shadow: none;
+}
+.level-text-large {
+    font-family: 'robotobold';
+    font-size: 30px;
+    float: left;
+    margin-right: 30px;
+    color: #fff;
+}
+.level-text-small {
+    font-size: 15px;
+    float: left;
+    color: #fff;
+    margin-top: 11px;
+}
 @media (-webkit-min-device-pixel-ratio: 2) {
     .logo {
         background-image: url(../images/logo-retina.png);
