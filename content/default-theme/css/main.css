@@ -142,8 +142,16 @@ h5 {
     background-color: #444;
     color: #fff;
 }
+.title-type-two {
+    color: #fff;
+    padding:6px 20px;
+}
+.title-type-two h3, .title-type-two h4{
+    color: #fff;
+    font-size: 1.2em;
+}
 .title-type-one h4,
-.title-type-one h3 {
+.title-type-one h3, .title-type-two h3, .title-type-two h4 {
     margin: 0px;
 }
 .yellow-text {
@@ -160,7 +168,7 @@ h5 {
     font-family: 'robotobold';
     font-size: 1.1em;
 }
-.grid {
+.grid, .grid-type-two {
     border-bottom: 1px solid #d3d3d3;
 }
 .scorecard-tile {
@@ -205,6 +213,30 @@ h5 {
     float: left;
     color: #fff;
     margin-top: 11px;
+}
+#popup-trigger{
+    cursor: pointer;
+}
+#popup-trigger:hover{
+    background-color: #f1f1f1;
+}
+.grid-type-two .col{
+    padding: 5px 4px;
+}
+.grid-first-row-set > div{
+    border-left:5px solid #f35958;
+}
+.grid-second-row-set > div{
+    border-left:5px solid #fdd01c;
+}
+.grid-third-row-set > div{
+    border-left:5px solid #0aa699;
+}
+.padding-zero{
+    padding: 0px !important;
+}
+.large-text{
+    font-size: 2em;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
     .logo {
