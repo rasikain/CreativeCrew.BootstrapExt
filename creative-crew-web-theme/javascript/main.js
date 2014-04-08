@@ -27,6 +27,12 @@ $("#loadScorecard").bind({
         $("#midContainer").load('scorecard.html #appContent');
     }
 });
+$("#loadImportProjects").bind({
+    click: function () {
+
+        $("#midContainer").load('import-projects.html #appContent');
+    }
+});
 $("#loadTypography").bind({
     click: function () {
 
