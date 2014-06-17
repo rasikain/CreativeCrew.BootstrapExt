@@ -16,21 +16,51 @@ $("#launchButton").bind({
     }
 });
 
-$("#loadDashboard").bind({
-    click: function () {
-        $("#midContainer").load('index.html #appContent')
-    }
-});
-$("#loadScorecard").bind({
+$("#headerContainer").load('header.html');
+$("#midContainer").load('index.html');
+
+
+$("#loadMessages").bind({
     click: function () {
 
-        $("#midContainer").load('scorecard.html #appContent');
+        $("#midContainer").load('messages.html');
     }
 });
-$("#loadImportProjects").bind({
+$("#loadIcons").bind({
     click: function () {
 
-        $("#midContainer").load('import-projects.html #appContent');
+        $("#midContainer").load('icons.html');
+    }
+});
+$("#loadFormElements").bind({
+    click: function () {
+
+        $("#midContainer").load('form-elements.html');
+    }
+});
+$("#loadFormTypes").bind({
+    click: function () {
+
+        $("#midContainer").load('form-types.html');
+       
+    }
+});
+$("#loadFormValidations").bind({
+    click: function () {
+
+        $("#midContainer").load('form-validations.html');
+    }
+});
+$("#loadButtons").bind({
+    click: function () {
+
+        $("#midContainer").load('buttons.html');
+    }
+});
+$("#loadContainers").bind({
+    click: function () {
+
+        $("#midContainer").load('containers.html');
     }
 });
 $("#loadTypography").bind({
@@ -39,5 +69,6 @@ $("#loadTypography").bind({
         $("#midContainer").load('typhography.html');
     }
 });
-$("#headerContainer").load('header.html');
-$("#midContainer").load('index.html #appContent');
+
+
+

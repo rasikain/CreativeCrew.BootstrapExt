@@ -131,12 +131,21 @@ h1 {
 }
 .cc-web-element-container h3{
     margin-top: 0px;
+    margin-bottom: 15px;
 }
 .cc-panel-controlls{
     position: absolute;
     right: 20px;
     top:20px;
+    width: 28px;
+    height: 18px;
+    background: url(../images/ico-code.png) no-repeat;
+    background-size: 28px; 
+    cursor: pointer;
 }
-.cc-content{
 
+.cc-code{
+    display: none;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
 }
